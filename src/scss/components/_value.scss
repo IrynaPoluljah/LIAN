@@ -1,0 +1,33 @@
+.c-value {
+  width: 32%;
+}
+
+.c-value__img img {
+  width: 100%;
+}
+
+.c-value__info {
+  padding-top: 28px;
+}
+
+.c-value__title {
+  font-size: 18px;
+  font-weight: $fontLight;
+  color: $black;
+  letter-spacing: $letterSpacLg;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.c-value__content {
+  font-weight: $fontRegular;
+  letter-spacing: $LetterSpacXs;
+  color: $greyLight;
+  line-height: 2em;
+}
+
+.c-value__wrap {
+  @include flex;
+  @include space-between;
+  padding-bottom: 30px; 
+}

@@ -1,0 +1,18 @@
+.c-inner {
+  background-color: $greyBg;
+  background-image: url(../img/inner.jpg);
+  background-repeat: no-repeat;
+  background-position: right, center;
+  padding: 108px 0;
+  box-shadow: inset 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.c-inner .c-container{
+  @include flex;
+  @include column;
+}
+
+.c-inner--portfolio {
+  background-image: url(../img/inner-portfolio.png);
+  background-color: $greyInnerPortfolio;
+}

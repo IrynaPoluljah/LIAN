@@ -1,0 +1,26 @@
+.c-nav__link {
+  font-weight: $fontBold;
+  letter-spacing: $LetterSpacSm;
+  color: $greyLight;
+  text-transform: uppercase;
+}
+
+.c-nav__link + .c-nav__link, 
+.c-nav__search {
+  margin-left: 47px;
+}
+
+.c-nav__link--active {
+  position: relative;
+  color: $black;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: $black;
+    top: 9px;
+    left: -30px;
+  }
+}

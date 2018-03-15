@@ -1,0 +1,30 @@
+.c-icon {
+  font-size: 12px;
+  color: $greyLight;
+}
+
+.c-icon:hover {
+  color: $black;
+}
+
+.c-icon__link + .c-icon__link {
+  margin-left: 55px;
+}
+
+.c-icon--light {
+  font-size: 13px;
+  color: $greyXs;
+    &:hover {
+      color: $greyXs;
+    }
+}
+
+.c-news__shares .c-icon .fa {
+  &:hover {
+    color: $white;
+  }
+}
+
+.c-icon--light + .c-icon--light {
+  margin-left: 25px;
+}

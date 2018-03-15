@@ -1,0 +1,8 @@
+.c-agency {
+  @include flex;
+  @include space-between;
+}
+
+.c-agency__block + .c-agency__block {
+  margin-top: 43px;
+}

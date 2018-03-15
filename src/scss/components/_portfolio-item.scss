@@ -1,0 +1,41 @@
+.c-portfolio__hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .6);
+  opacity: 0;
+  transition: all .4s linear;
+  cursor: pointer;
+    &:hover {
+      opacity: 1;
+    }
+    &::after, &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 40px;
+      width: 2px;
+      background-color: rgba(255, 255, 255, .6);
+      top: 50%;
+      right: 50%;
+      transform: translateY(-50%);
+    }
+    &::before {
+      transform: translateY(-50%) rotate(90deg);
+    }
+}
+
+.c-portfolio {
+  position: relative;
+}
+
+.c-portfolio img {
+  width: 100%;
+  height: 100%;
+}
+
+.c-portfolio + .c-portfolio {
+  margin-top: 35px;
+}

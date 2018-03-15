@@ -1,0 +1,31 @@
+.c-tags {
+  padding: 10px 15px;
+  border: 1px solid $greyXs;
+  font-weight: $fontRegular;
+  color: $greyMd;
+  font-size: 0;
+}
+
+.c-tags__item {
+  display: inline-block;
+}
+
+.c-tags__item + .c-tags__item {
+  margin-left: 7px;
+  margin-bottom: 9px;
+}
+
+.c-tags span {
+  font-size: 12px;
+}
+
+.c-tags__item a {
+  display: block;
+    &:hover {
+      .c-tags {
+        color: $black;
+        border-color: $black;
+      }
+    }
+}
+

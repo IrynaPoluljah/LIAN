@@ -1,0 +1,38 @@
+.c-tabs {
+  padding: 18px 0;
+  border-bottom: 1px solid $greyXs;
+  border-top: 1px solid $greyXs;
+  margin-bottom: 30px;
+}
+
+.c-tabs__list {
+  @include flex;
+  @include center;
+}
+
+.c-tabs__item {
+  font-weight: $fontBold;
+  font-size: 14px;
+  color: $greyLight;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+    &:hover {
+      color: $black;
+    }
+}
+
+.c-tabs__item + .c-tabs__item {
+  margin-left: 48px;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 32px;
+      width: 2px;
+      left: -23px;
+      top: -7px;
+      transform: rotate(23deg);
+      background-color: $greyXs;
+    }
+}

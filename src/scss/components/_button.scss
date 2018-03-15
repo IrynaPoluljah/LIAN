@@ -1,0 +1,28 @@
+.c-button {
+  font-size: 13px;
+  letter-spacing: $LetterSpacLit;
+  font-weight: $fontBold;
+  color: $white;
+  text-transform: uppercase;
+  background-color: $greyLight;
+  padding: 11px 28px;
+  border-radius: 2px;
+  cursor: pointer;
+    &:hover {
+      background-color: $grey;
+    }
+}
+
+.c-button--black {
+  background-color: $black;
+}
+
+.c-button--bigger {
+  padding: 14px 57px;
+}
+
+.c-section__portfolio .c-button__wrap {
+  @include flex;
+  @include center;
+  padding-top: 35px;
+}

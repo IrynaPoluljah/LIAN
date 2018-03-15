@@ -1,0 +1,45 @@
+.c-content {
+  font-weight: $fontRegular;
+  line-height: 2em;
+  letter-spacing: $LetterSpacXs;
+}
+
+.c-content + .c-content {
+  margin-top: 50px;
+}
+
+.c-section__contacts .c-content + .c-content {
+  margin-top: 0;
+}
+
+.c-content--center {
+  text-align: center;
+}
+
+.c-content__copyright {
+  font-weight: $fontRegular;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: $LetterSpacXs;
+  color: $greyMd;
+}
+
+.c-content__copyright--black {
+  color: $black;
+}
+
+.c-content--bold {
+  font-weight: $fontBold;
+  line-height: 1em;
+  color: $blackMd;
+}
+
+.c-content--grey {
+  line-height: 1em;
+  color: $greyLight;
+}
+
+.c-content--block {
+  display: block;
+  line-height: 1.6em;
+}

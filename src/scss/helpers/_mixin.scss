@@ -1,0 +1,54 @@
+@mixin flex {
+  display: flex;
+}
+
+@mixin space-between {
+  justify-content: space-between;
+}
+
+// @mixin space-around {
+//   justify-content: space-around;
+// }
+
+@mixin center {
+  justify-content: center;
+}
+
+// @mixin end {
+//   justify-content: flex-end;
+// }
+
+// @mixin start {
+//   justify-content: flex-start;
+// }
+
+@mixin align-center {
+  align-items: center;
+}
+
+// @mixin align-baseline {
+//   align-items: baseline;
+// }
+
+@mixin column {
+  flex-direction: column;
+}
+
+@mixin wrap {
+  flex-wrap: wrap;
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {color: $greyXs;}
+  &::-moz-placeholder          {color: $greyXs;}
+  &:-moz-placeholder           {color: $greyXs;}
+  &:-ms-input-placeholder      {color: $greyXs;}
+}
+
+@mixin placeholder-focus {
+  :focus::-webkit-input-placeholder {color: transparent}
+  :focus::-moz-placeholder          {color: transparent}  
+  :focus:-moz-placeholder           {color: transparent}
+  :focus:-ms-input-placeholder      {color: transparent}
+}
+

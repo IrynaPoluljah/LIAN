@@ -1,0 +1,39 @@
+.c-team {
+  width: 32%;
+}
+
+.c-team__img img {
+  width: 100%;
+}
+
+.c-team__info {
+  padding: 35px 35px 30px;
+  background: $white;
+}
+
+.c-team__title {
+  font-weight: $fontLight;
+  font-size: 24px;
+  letter-spacing: $LetterSpacSm;
+  color: $blackDark;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.c-team__subtitle {
+  font-weight: $fontBold;
+  font-size: 16px;
+  letter-spacing: $LetterSpacXs;
+  margin-bottom: 25px;
+}
+
+.c-team__content {
+  font-weight: $fontRegular;
+  color: $greyMd;
+  line-height: 1.7em;
+}
+
+.c-team__wrap {
+  @include flex;
+  @include space-between;
+}

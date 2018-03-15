@@ -1,0 +1,10 @@
+.l-header {
+  background-color: $white;
+  padding: 27px 0;
+}
+
+.l-header .c-container {
+  @include flex;
+  @include space-between;
+  @include align-center;
+}

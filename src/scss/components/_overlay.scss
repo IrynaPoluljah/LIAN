@@ -1,0 +1,47 @@
+.c-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, .85);
+  transition: all .6s linear;
+}
+
+.c-overlay__mark {
+  position: absolute;
+  z-index: 2;
+  top: 5px;
+  right: 50%;
+  transform: translate(50%);
+  padding: 20px;
+  background-color: $white;
+  line-height: 2em;
+  text-align: center;
+  border-radius: 5px;
+    &::after {
+      content: "";
+      display: block;
+      width: 20px;
+      height: 20px;
+      bottom: -3px;
+      background-color: $white;
+      position: absolute;
+      right: 50%;
+      transform: rotate(45deg) translate(50%);
+    }
+}
+
+.c-overlay__title {
+  font-weight: $fontBold;
+  text-transform: uppercase;
+  color: $black;
+  letter-spacing: $LetterSpacXs;
+}
+
+.c-overlay__address {
+  display: block;
+  font-weight: $fontLight;
+  letter-spacing: $LetterSpacXs;
+  color: $greyLight;
+}

@@ -1,0 +1,40 @@
+.c-post {
+  @include flex;
+  @include space-between;
+}
+
+.c-post + .c-post {
+  margin-top: 23px;
+}
+
+.c-post__img {
+  height: 100%;
+}
+
+.c-post__img img {
+  height: 100%;
+  width: auto;
+}
+
+.c-post__img a {
+  display: block;
+}
+
+.c-post__info {
+  margin-left: 16px;
+  line-height: 1.25em;
+}
+
+.c-post__title {
+  font-weight: $fontRegular;
+  font-size: 16px;
+  color: $blackMd;
+  margin-bottom: 17px;
+  display: block;
+}
+
+.c-post__date {
+  font-weight: $fontLight;
+  font-size: 13px;
+  color: $greyLight;
+}

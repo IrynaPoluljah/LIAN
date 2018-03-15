@@ -1,0 +1,40 @@
+.c-container {
+  margin: 0 auto;
+  //max-width: 1140px;
+}
+
+.c-container__center {
+  @include flex;
+  @include center;
+  @include wrap;
+  margin-bottom: 70px;
+}
+
+.c-section__news .c-container {
+  @include flex;
+  @include space-between;
+}
+
+@media(max-width: 768px) {
+  .c-container {
+    padding: 0 15px;
+  }
+}
+
+@media(min-width: 768px) {
+  .c-container {
+    max-width: 750px;
+  }
+}
+
+@media(min-width: 992px) {
+  .c-container {
+    max-width: 970px;
+  }
+}
+
+@media(min-width: 1200px) {
+  .c-container {
+    max-width: 1140px;
+  }
+}

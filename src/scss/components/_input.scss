@@ -1,0 +1,98 @@
+.c--input {
+  @include placeholder;
+  width: 48%;
+  border: 1px solid $light;
+  padding: 15px 13px;
+  color: $greyXs;
+  font-weight: $fontRegular;
+  font-style: italic;
+  background-color: $greyXsLight;
+    &:focus {
+      @include placeholder-focus;
+      background-color: $white;
+    }
+}
+
+.c-input {
+  @include placeholder;
+  color: $greyXs;
+  padding: 15px 13px;
+  font-style: italic;
+  font-weight: $fontRegular;
+  letter-spacing: $LetterSpacXs;
+  background-color: $greyXsLight;
+  &:focus {
+    @include placeholder-focus;
+    background-color: $white;
+  }
+}
+
+.c-input__wrap {
+  @include flex;
+  @include space-between;
+  margin-bottom: 35px;
+}
+
+.c-input--half {
+  width: 48%;
+}
+
+.c-input--bordered {
+  border: 1px solid $light;
+}
+
+.c-input--wide {
+  width: 100%;
+  padding: 14px 58px 14px 30px;
+}
+
+.c-input--unborder {
+  border: none;
+  border-radius: 3px;
+}
+
+.c-input--light {
+  background-color: $white;
+  color: $greyMd;
+}
+
+.c-input--small {
+  padding: 5px 24px 5px 5px;
+}
+
+.c-input--search {
+  font-size: 16px;
+  position: relative;
+}
+
+.c-input__block {
+  margin-left: 47px;
+  display: inline-block;
+  position: relative;
+}
+
+.c-input__block label {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.c-input__sign {
+  background-color: $greyMd;
+  border-radius: 2px;
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  right: 12px;
+  top: 6px;
+  z-index: 9;
+  cursor: pointer;
+}
+
+.c-input__label .fa {
+  position: absolute;
+  font-size: 16px;
+  color: $white;
+  top: 8px;
+  left: 10px;
+}

@@ -1,0 +1,50 @@
+.c-title {
+  font-weight: $fontLight;
+  font-size: $fontSizeSm;
+  letter-spacing: $letterSpacLg;
+  color: $blackDark;
+  text-transform: uppercase;
+}
+
+.c-title--hide {
+  font-size: 0;
+}
+
+.c-title__wrap {
+  padding: 10px 73px 14px 35px;
+  background-color: $black;
+  width: max-content;
+}
+
+.c-title--main {
+  font-size: 48px;
+  color: $white;
+  letter-spacing: $LetterSpacMd;
+}
+
+.c-title--big {
+  font-size: 30px;
+}
+
+.c-section__contacts .c-title--big {
+  margin-bottom: 20px;
+}
+
+.c-container__center .c-title--big {
+  width: 100%;
+}
+
+.c-title--center {
+  text-align: center;
+}
+
+.c-title--indenter {
+  margin-bottom: 45px;
+}
+
+.c-title__subtitle {
+  font-weight: $fontLight;
+  font-size: $fontSizeXs;
+  letter-spacing: $LetterSpacXs;
+  color: $blackXs;
+}
