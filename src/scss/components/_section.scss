@@ -79,6 +79,7 @@
 
 .c-section__inner--rows {
   font-size: 0;
+  padding: 20px 20px 11px 13px;
 }
 
 .c-section__instagram {
@@ -87,10 +88,6 @@
 
 .c-section__instagram + .c-section__instagram {
   margin-top: 6px;
-}
-
-.c-section__instagram li +  li {
-  margin-left: 6px;
 }
 
 .c-section__instagram img {
@@ -109,6 +106,11 @@
 .c-section__wrap {
   @include flex;
   @include space-between;
+}
+
+.c-section__aside .c-section__wrap {
+  display: block;
+  padding-top: 27px;
 }
 
 .c-section__contacts {
@@ -154,5 +156,87 @@
 }
 
 .c-section__news {
-  padding: 70px 100px;
+  padding: 70px 0 100px;
+}
+
+@media(max-width: 991px) {
+  .c-section {
+    padding: 32px 0 20px;
+  }
+
+  .c-section__content {
+    width: 100%;
+  }
+
+  .c-container__center .c-section__column {
+    width: 80%;
+  }
+
+  .c-section__aside {
+    width: 100%;
+  }
+
+  .c-section__aside .c-section__wrap {
+    @include flex;
+    @include column;
+  }
+
+  .c-section__instagram {
+    @include space-between;
+  }
+  
+}
+
+@media(max-width: 768px) {
+  .c-agency .c-section__column {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .c-agency img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .c-section__column + .c-section__column {
+    margin-top: 25px;
+  }
+
+  .c-section__wrap.c-section__contacts {
+    @include wrap;
+  }
+
+  .c-section__portfolio .c-section__wrap {
+    @include wrap;
+    @include center;
+  }
+
+  .c-section__portfolio .c-section__content {
+    width: 60%;
+  }
+}
+
+@media(max-width: 599px) {
+  .c-section__content .c-section__column {
+    width: 65%;
+  }
+
+  .c-section__news .c-section__content {
+    @include wrap;
+    @include center;
+  }
+
+  .c-section__portfolio .c-section__content {
+    width: 80%;
+  }
+}
+
+@media(max-width: 479px) {
+  .c-section__content .c-section__column {
+    width: 96%;
+  }
+
+  .c-section__portfolio .c-section__content {
+    width: 90%;
+  }
 }

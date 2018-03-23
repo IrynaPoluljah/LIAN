@@ -96,3 +96,27 @@
   top: 8px;
   left: 10px;
 }
+
+@media(max-width: 991px) {
+  .c-input__sign {
+    top: 37px;
+  }
+
+  .c-input__block {
+    display: none;
+  }
+}
+
+@media(max-width: 478px) {
+  .c-input--half {
+    width: 100%;
+  }
+
+  .c-input--half + .c-input--half {
+    margin-top: 15px;
+  }
+
+  .c-input__wrap {
+    @include wrap;
+  }
+}

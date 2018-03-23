@@ -64,3 +64,15 @@
   @include flex;
   @include space-between;
 }
+
+@media(max-width: 1199px) {
+  .c-news__info {
+    padding: 20px;
+  }
+}
+
+@media(max-width: 599px) {
+  .c-news__img {
+    text-align: center;
+  }
+}

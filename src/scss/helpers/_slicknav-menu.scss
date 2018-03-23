@@ -3,6 +3,30 @@
   right: 0;
   padding: 0;
   background-color: none;
+  border-radius: 3px;
+}
+
+.slicknav_nav {
+  position: absolute;
+	z-index: 100;
+	right: 0;
+	left: 0;
+	top: 100%;
+	background-color: rgba(255,255,255,.9);
+	color: #34404b;
+	font-size: inherit;
+	text-align: right;
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  @include flex;
+  @include column;
+  @include align-end;
+}
+
+.slicknav_nav a {
+  font-weight: $fontBold;
+  letter-spacing: $LetterSpacSm;
+  color: $greyLight;
+  text-transform: uppercase; 
 }
 
 @media(max-width: 992px) {

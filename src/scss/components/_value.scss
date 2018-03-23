@@ -31,3 +31,32 @@
   @include space-between;
   padding-bottom: 30px; 
 }
+
+@media(max-width: 768px) {
+  .c-value {
+    width: 51%;
+  }
+
+  .c-value + .c-value {
+    margin-top: 30px;
+  }
+
+  .c-value__wrap {
+    @include wrap;
+    @include center;
+  }
+
+  .c-value__info {
+    padding-top: 10px;
+  }
+
+  .c-value__title {
+    margin-bottom: 10px;
+  }
+}
+
+@media(max-width: 478px) {
+  .c-value {
+    width: 95%;
+  }
+}

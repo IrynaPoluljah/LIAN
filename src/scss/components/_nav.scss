@@ -20,7 +20,13 @@
     width: 20px;
     height: 2px;
     background-color: $black;
-    top: 9px;
+    top: 45%;
     left: -30px;
+  }
+}
+
+@media(max-width: 992px) {
+  .c-nav {
+    display: none;
   }
 }

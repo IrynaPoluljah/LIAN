@@ -93,8 +93,8 @@ gulp.task('sprite', function () { // Создаем таск sprite
 
 gulp.task('scripts', function() {
     return gulp.src('src/js/**/*.js')
-        .pipe(concat('plugins.min.js')) // Собираем их в кучу в новом файле plugins.min.js
-        .pipe(uglify()) // Сжимаем JS файл
+        //.pipe(concat('plugins.min.js')) // Собираем их в кучу в новом файле plugins.min.js
+        //.pipe(uglify()) // Сжимаем JS файл
         .pipe(gulp.dest('app/js')); // Выгружаем в папку app/js
 });
 

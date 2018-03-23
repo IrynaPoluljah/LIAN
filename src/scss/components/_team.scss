@@ -37,3 +37,28 @@
   @include flex;
   @include space-between;
 }
+
+@media(max-width: 768px) {
+  .c-team {
+    width: 51%;
+    margin: 0 auto;
+  }
+
+  .c-team__wrap {
+    @include wrap;
+  }
+
+  .c-team + .c-team {
+    margin-top: 20px;
+  }
+}
+
+@media(max-width: 599px) {
+  .c-team {
+    width: 75%;
+  }
+
+  .c-team__info {
+    padding: 25px 15px 15px;
+  }
+}

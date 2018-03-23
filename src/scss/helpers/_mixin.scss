@@ -6,29 +6,21 @@
   justify-content: space-between;
 }
 
-// @mixin space-around {
-//   justify-content: space-around;
-// }
+@mixin space-around {
+  justify-content: space-around;
+}
 
 @mixin center {
   justify-content: center;
 }
 
-// @mixin end {
-//   justify-content: flex-end;
-// }
-
-// @mixin start {
-//   justify-content: flex-start;
-// }
-
 @mixin align-center {
   align-items: center;
 }
 
-// @mixin align-baseline {
-//   align-items: baseline;
-// }
+@mixin align-end {
+  align-items: flex-end;
+}
 
 @mixin column {
   flex-direction: column;

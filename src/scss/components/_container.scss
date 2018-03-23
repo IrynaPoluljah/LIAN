@@ -1,6 +1,5 @@
 .c-container {
   margin: 0 auto;
-  //max-width: 1140px;
 }
 
 .c-container__center {
@@ -19,6 +18,10 @@
   .c-container {
     padding: 0 15px;
   }
+
+  .c-container__center {
+    margin-bottom: 40px;
+  }
 }
 
 @media(min-width: 768px) {
@@ -27,9 +30,15 @@
   }
 }
 
-@media(min-width: 992px) {
+@media(min-width: 991px) {
   .c-container {
     max-width: 970px;
+  }
+}
+
+@media(max-width: 991px) {
+  .c-section__news .c-container {
+    @include wrap;
   }
 }
 

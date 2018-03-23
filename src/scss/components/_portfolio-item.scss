@@ -39,3 +39,9 @@
 .c-portfolio + .c-portfolio {
   margin-top: 35px;
 }
+
+@media(max-width: 768px) {
+  .c-portfolio {
+    margin-top: 35px;
+  }
+}

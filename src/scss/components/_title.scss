@@ -6,7 +6,7 @@
   text-transform: uppercase;
 }
 
-.c-title--hide {
+.c-title.c-title--hide {
   font-size: 0;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .c-title--indenter {
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 }
 
 .c-title__subtitle {
@@ -47,4 +47,36 @@
   font-size: $fontSizeXs;
   letter-spacing: $LetterSpacXs;
   color: $blackXs;
+}
+
+@media(max-width: 976px) {
+  .c-title--indenter {
+    margin-bottom: 10px;
+  }
+}
+
+@media(max-width: 768px) {
+  .c-title {
+    font-size: 16px;
+  }
+
+  .c-title--main {
+    font-size: 36px;
+  }
+}
+
+@media(max-width: 599px) {
+  .c-title__wrap {
+    padding: 10px 30px;
+  }
+
+  .c-title--main {
+    font-size: 25px;
+  }
+}
+
+@media(max-width: 478px) {
+  .c-title__wrap {
+    padding: 10px 10px;
+  }
 }

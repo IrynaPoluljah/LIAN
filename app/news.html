@@ -18,6 +18,12 @@
   <!-- FontAwesome -->
   <link rel="stylesheet" href="css/font-awesome.min.css">
 
+  <!-- JQuery -->
+  <link rel="stylesheet" href="https:code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+
+  <link rel="stylesheet" href="css/slicknav.css">
+
   <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -318,210 +324,206 @@
             </div>
             <input type="text" id="search" class="c-input c-input--search c-input--wide c-input--unborder c-input--light" placeholder="Search">
           </section>
-          <section class="c-section c-section--min">
-            <div class="c-section__header">
-              <span>Recent posts</span>
-            </div>
-            <div class="c-section__inner">
-              <div class="c-post">
-                <div class="c-post__img">
-                  <a href="#">
-                    <img src="img/post-1.png" alt="image-post">
-                  </a>
-                </div>
-                <div class="c-post__info">
-                  <p>
-                    <a href="#" class="c-post__title">
-                      Lorem ipsum dolor sit amet, consec
-                    </a>
-                  </p>
-                  <span class="c-post__date">
-                    July 25, 2016
-                  </span>
-                </div>
-              </div>
-              <div class="c-post">
-                <div class="c-post__img">
-                  <a href="#">
-                    <img src="img/post-2.png" alt="image-post">
-                  </a>
-                </div>
-                <div class="c-post__info">
-                  <p>
-                    <a href="#" class="c-post__title">
-                      Ut wisi enim ad minim veniam, quis
-                    </a>
-                  </p>
-                  <span class="c-post__date">
-                    July 23, 2016
-                  </span>
-                </div>
-              </div>
-              <div class="c-post">
-                <div class="c-post__img">
-                  <a href="#">
-                    <img src="img/post-3.png" alt="image-post">
-                  </a>
-                </div>
-                <div class="c-post__info">
-                  <p>
-                    <a href="#" class="c-post__title">
-                      Lorem ipsum dolor sit amet, consec
-                    </a>
-                  </p>
-                  <span class="c-post__date">
-                    July 22, 2016
-                  </span>
-                </div>
-              </div>
-              <div class="c-post">
-                <div class="c-post__img">
-                  <a href="#">
-                    <img src="img/post-4.png" alt="image-post">
-                  </a>
-                </div>
-                <div class="c-post__info">
-                  <p>
-                    <a href="#" class="c-post__title">
-                      Ut wisi enim ad minim veniam, quis
-                    </a>
-                  </p>
-                  <span class="c-post__date">
-                    July 21, 2016
-                  </span>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class="c-section c-section--min">
-            <div class="c-section__header">
-              <span>Popular tags</span>
-            </div>
-            <div class="c-section__inner c-section__inner--rows">
-              <ul class="c-tags__list">
-                <li class="c-tags__item">
-                  <a href="#">
-                    <div class="c-tags">
-                      <span>constructions</span>
+          <div class="c-section__wrap">
+              <section class="c-section c-section--min">
+                  <div class="c-section__header">
+                    <span>Recent posts</span>
+                  </div>
+                  <div class="c-section__inner">
+                    <div class="c-post">
+                      <div class="c-post__img">
+                        <a href="#">
+                          <img src="img/post-1.png" alt="image-post">
+                        </a>
+                      </div>
+                      <div class="c-post__info">
+                        <p>
+                          <a href="#" class="c-post__title">
+                            Lorem ipsum dolor sit amet, consec
+                          </a>
+                        </p>
+                        <span class="c-post__date">
+                          July 25, 2016
+                        </span>
+                      </div>
                     </div>
-                  </a>
-                </li>
-                <li class="c-tags__item">
-                  <a href="#">
-                    <div class="c-tags">
-                      <span>engineering</span>
+                    <div class="c-post">
+                      <div class="c-post__img">
+                        <a href="#">
+                          <img src="img/post-2.png" alt="image-post">
+                        </a>
+                      </div>
+                      <div class="c-post__info">
+                        <p>
+                          <a href="#" class="c-post__title">
+                            Ut wisi enim ad minim veniam, quis
+                          </a>
+                        </p>
+                        <span class="c-post__date">
+                          July 23, 2016
+                        </span>
+                      </div>
                     </div>
-                  </a>
-                </li>
-                <li class="c-tags__item">
-                  <a href="#">
-                    <div class="c-tags">
-                      <span>architecture</span>
+                    <div class="c-post">
+                      <div class="c-post__img">
+                        <a href="#">
+                          <img src="img/post-3.png" alt="image-post">
+                        </a>
+                      </div>
+                      <div class="c-post__info">
+                        <p>
+                          <a href="#" class="c-post__title">
+                            Lorem ipsum dolor sit amet, consec
+                          </a>
+                        </p>
+                        <span class="c-post__date">
+                          July 22, 2016
+                        </span>
+                      </div>
                     </div>
-                  </a>
-                </li>
-              </ul>
-              <ul class="c-tags__list">
-                <li class="c-tags__item">
-                  <a href="#">
-                    <div class="c-tags">
-                      <span>structural design</span>
+                    <div class="c-post">
+                      <div class="c-post__img">
+                        <a href="#">
+                          <img src="img/post-4.png" alt="image-post">
+                        </a>
+                      </div>
+                      <div class="c-post__info">
+                        <p>
+                          <a href="#" class="c-post__title">
+                            Ut wisi enim ad minim veniam, quis
+                          </a>
+                        </p>
+                        <span class="c-post__date">
+                          July 21, 2016
+                        </span>
+                      </div>
                     </div>
-                  </a>
-                </li>
-                <li class="c-tags__item">
-                  <a href="#">
-                    <div class="c-tags">
-                      <span>civil design</span>
+                  </div>
+                </section>
+                <section class="c-section c-section--min">
+                  <div class="c-section__header">
+                    <span>Popular tags</span>
+                  </div>
+                  <div class="c-section__inner c-section__inner--rows">
+                    <div class="c-tags__item">
+                      <a href="#">
+                        <div class="c-tags">
+                          <span>constructions</span>
+                        </div>
+                      </a>
                     </div>
-                  </a>
-                </li>
-                <li class="c-tags__item">
-                  <a href="#">
-                    <div class="c-tags">
-                      <span>industrial</span>
+                    <div class="c-tags__item">
+                      <a href="#">
+                        <div class="c-tags">
+                          <span>engineering</span>
+                        </div>
+                      </a>
                     </div>
-                  </a>
-                </li>
-              </ul>
-              <ul class="c-tags__list">
-                <li class="c-tags__item">
-                  <a href="#">
-                    <div class="c-tags">
-                      <span>management</span>
+                    <div class="c-tags__item">
+                      <a href="#">
+                        <div class="c-tags">
+                          <span>architecture</span>
+                        </div>
+                      </a>
                     </div>
-                  </a>
-                </li>
-                <li class="c-tags__item">
-                  <a href="#">
-                    <div class="c-tags">
-                      <span>mechanical</span>
+                    <div class="c-tags__item">
+                      <a href="#">
+                        <div class="c-tags">
+                          <span>structural design</span>
+                        </div>
+                      </a>
                     </div>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </section>
-          <section class="c-section c-section--min">
-            <div class="c-section__header">
-              <span>
-                instagram
-              </span>
-            </div>
-            <div class="c-section__inner">
-              <ul class="c-section__instagram">
-                <li>
-                  <a href="#">
-                    <img src="img/instagram.png" alt="image">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="img/instagram-2.png" alt="image">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="img/instagram-3.png" alt="image">
-                  </a>
-                </li>
-              </ul>
-              <ul class="c-section__instagram">
-                <li>
-                  <a href="#">
-                    <img src="img/instagram-4.png" alt="image">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="img/instagram-5.png" alt="image">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="img/instagram-6.png" alt="image">
-                  </a>
-                </li>
-              </ul>
-              <ul class="c-section__instagram">
-                <li>
-                  <a href="#">
-                    <img src="img/instagram-7.png" alt="image">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="img/instagram-8.png" alt="image">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="img/instagram-9.png" alt="image">
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </section>
+                    <div class="c-tags__item">
+                      <a href="#">
+                        <div class="c-tags">
+                          <span>civil design</span>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="c-tags__item">
+                      <a href="#">
+                        <div class="c-tags">
+                          <span>industrial</span>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="c-tags__item">
+                      <a href="#">
+                        <div class="c-tags">
+                          <span>management</span>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="c-tags__item">
+                      <a href="#">
+                        <div class="c-tags">
+                          <span>mechanical</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </section>
+                <section class="c-section c-section--min">
+                  <div class="c-section__header">
+                    <span>
+                      instagram
+                    </span>
+                  </div>
+                  <div class="c-section__inner">
+                    <ul class="c-section__instagram">
+                      <li>
+                        <a href="#">
+                          <img src="img/instagram.png" alt="image">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="img/instagram-2.png" alt="image">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="img/instagram-3.png" alt="image">
+                        </a>
+                      </li>
+                    </ul>
+                    <ul class="c-section__instagram">
+                      <li>
+                        <a href="#">
+                          <img src="img/instagram-4.png" alt="image">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="img/instagram-5.png" alt="image">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="img/instagram-6.png" alt="image">
+                        </a>
+                      </li>
+                    </ul>
+                    <ul class="c-section__instagram">
+                      <li>
+                        <a href="#">
+                          <img src="img/instagram-7.png" alt="image">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="img/instagram-8.png" alt="image">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="img/instagram-9.png" alt="image">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </section>
+          </div>
         </div>
       </div>
     </div>
@@ -581,6 +583,7 @@
 
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/jquery.slicknav.js"></script>
 
   <script src="js/plugins.min.js"></script>
 

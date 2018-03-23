@@ -36,3 +36,9 @@
       background-color: $greyXs;
     }
 }
+
+@media(max-width: 768px) {
+  .c-tabs {
+    display: none;
+  }
+}

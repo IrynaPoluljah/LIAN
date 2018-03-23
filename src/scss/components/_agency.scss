@@ -3,6 +3,8 @@
   @include space-between;
 }
 
-.c-agency__block + .c-agency__block {
-  margin-top: 43px;
+@media(max-width: 768px) {
+  .c-agency  {
+    @include wrap;
+  }
 }

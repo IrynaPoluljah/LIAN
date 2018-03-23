@@ -38,3 +38,9 @@
   font-size: 13px;
   color: $greyLight;
 }
+
+@media(max-width: 991px) {
+  .c-post {
+    @include space-around;
+  }
+}
